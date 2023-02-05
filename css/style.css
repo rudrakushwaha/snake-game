@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+    margin:0px;
+    padding:0px
+}
+
+.body{
+    background: url("../background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: rgb(0,255,0);
+background: linear-gradient(90deg, rgba(0,255,0,1), rgba(255,255,0,1) );
+height: 70vmin;
+width: 70vmin;
+border: 2px solid black;
+display: grid;
+grid-template-columns:repeat(18,1fr) ;
+grid-template-rows: repeat(18,1fr);
+/* grid-column-start:(13,15) ; */
+}
+.head{
+    background:linear-gradient(rgb(203, 60, 60),rgb(255, 255, 59));
+    border:2px solid purple;
+    border-radius: 6px;
+    transform:scale(1.02)
+    
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.snake{
+    background-color: rgb(115, 117, 72);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#scoreBox{
+    position: absolute;
+    /* top: 9px;
+    right: 200px; */
+    font-size: 36px;
+    left: 0px;
+    bottom: 50px;
+    font-weight: bold;
+    font-family: 'Syne Mono', monospace;
+}
+#hiscoreBox{
+    position: absolute;
+    /* top: 59px; */
+    /* right: 150px; */
+    left: 0px;
+    bottom: 0px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Syne Mono', monospace;
+}
+p{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Syne Mono', monospace;
+}
+.instruct{
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0px;
+}
